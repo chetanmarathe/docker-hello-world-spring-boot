@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: chetanmarathedockerhelloworldspringboot 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: chetanmarathedockerhelloworldspringboot 
+    spec:
+      containers:
+        - name: chetanmarathedockerhelloworldspringboot 
+          image: azwebapp.azurecr.io/chetanmarathedockerhelloworldspringboot
+          ports:
+          - containerPort: 8080
